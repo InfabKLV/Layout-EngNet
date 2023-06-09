@@ -6,8 +6,13 @@ body{
 #menu-horizontal{
     display: flex;
     flex-direction: row;
-    gap: 3em;
+    gap: 5em;
     border: 1px solid #FFFFFF;
+}
+
+.parte-menu > a{
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 #menu-vertical, a{
@@ -22,13 +27,54 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    align-self: center;
     justify-content: flex-end;
     margin-right: 1em;
     gap: 1em;
     width: 100%;
 }
 
+.parte-menu-direita > a{
+    display: flex;
+    align-items: center;
+}
+
+.email{
+    max-width: 1.5em;
+    margin-bottom: 0.7em;
+}
+
 .principal-content{
+    display: flex;
+    align-items: center;
     float: right;
 }
-/* mudança*/
+
+@media (min-width: 981px) {
+    .illustration{
+        display: flex;
+        max-width: 100%;
+        margin: 0em 20em 0em 0em;
+    }
+
+    .escrito{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0em 0em 0em 15em;
+    }
+}
+
+@media (max-width: 980px) {
+    .illustration{
+        display: flex;
+        margin: 0em 5em 0em 2em;
+        max-width: 20em;
+    }
+    .escrito{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0em 0em 0em 15em;
+    }
+}
